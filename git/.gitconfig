@@ -1,0 +1,15 @@
+[user]
+	name = Carter J. Bastian
+	email = carter.bastian1@gmail.com
+
+[core]
+	excludesfile = ~/.gitignore
+
+[alias]
+    co = checkout
+    m = merge
+    p = push
+    d = diff
+
+[commit]
+    template = ~/.git_template/commit_template
