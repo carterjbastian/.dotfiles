@@ -20,6 +20,9 @@ brew install python3
 brew install caskroom/cask/brew-cask
 
 # Install Casks
+brew cask install --appdir="/Applications" 1password
+brew cask install --appdir="/Applications" evernote
+brew cask install --appdir="/Applications" private-internet-access
 brew cask install --appdir="/Applications" macdown
 brew cask install --appdir="/Applications" flux
 brew cask install --appdir="/Applications" google-chrome

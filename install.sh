@@ -4,6 +4,15 @@
 echo "Starting Installation..."
 echo "Let's get this bread."
 
+echo "Before you run this script, you have to have set up iCloud. Have you don't that? [y/n]: "
+read ans
+
+if [[ $ans != "y" ]]; then
+    echo "Do that, then run this again"
+    exit
+fi
+
+
 PWD_PREFIX="$HOME/.dotfiles"
 DOTFILE_MANIFEST="$PWD_PREFIX/manifest"
 
