@@ -9,5 +9,5 @@ alias st='git branch -l; git status'
 # Navigation shortcuts
 alias cdb="cd ~/blog/"
 
-# Work Specific
+# Project Specific
 alias logs="pm2 logs pulse-api"

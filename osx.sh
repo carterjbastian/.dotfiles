@@ -2,9 +2,6 @@
 sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Reduce transparency
-defaults write com.apple.universalaccess reduceTransparency -bool true
-
 # Always show scrollbars
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
@@ -34,10 +31,6 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 # Enable full keyboard access for all controls (EG tab in dialogues)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
-
-# Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
@@ -135,5 +128,6 @@ defaults write com.google.Chrome.canary AppleEnableMouseSwipeNavigateWithScrolls
 ###############################################################################
 
 for app in "Dock" "Finder" "Google Chrome" "Google Chrome Canary" \
-    "SystemUIServer"; do
-    killall "${app}" > /dev/null 2>&1
+   "SystemUIServer"; do
+   killall "${app}" > /dev/null 2>&1
+done

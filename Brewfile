@@ -1,43 +1,45 @@
+#!/usr/bin/env bash
+#
 # Are we up to date as is?
 brew update
 brew upgrade --all
 
 # Install dev tools
-install git
-install openssl
-install heroku-toolbelt
-install ack
-install tree
-install wget
+brew install git
+brew install openssl
+brew install heroku-toolbelt
+brew install ack
+brew install tree
+brew install wget
 
 # Install Python
-install python
-install python3
+brew install python
+brew install python3
 
 # Install Cask
-install caskroom/cask/brew-cask
+brew install caskroom/cask/brew-cask
 
 # Install Casks
-cask install --appdir="/Applications" macdown
-cask install --appdir="/Applications" flux
-cask install --appdir="/Applications" google-chrome
-cask install --appdir="/Applications" slack
-cask install --appdir="/Applications" atom
-cask install --appdir="/Applications" dropbox
-cask install --appdir="/Applications" spotify
-cask install --appdir="/Applications" sourcetree
-cask install --appdir="/Applications" iterm2
+brew cask install --appdir="/Applications" macdown
+brew cask install --appdir="/Applications" flux
+brew cask install --appdir="/Applications" google-chrome
+brew cask install --appdir="/Applications" slack
+brew cask install --appdir="/Applications" atom
+brew cask install --appdir="/Applications" dropbox
+brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="/Applications" sourcetree
+brew cask install --appdir="/Applications" iterm2
 
 # Install quicklook plugins
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
-cask install "qlcolorcode"
-cask install "qlimagesize"
-cask install "qlmarkdown"
-cask install "qlstephen"
-cask install "qlvideo"
-cask install "quicklook-json"
-cask install "suspicious-package"
-cask install "webpquicklook"
+brew cask install "qlcolorcode"
+brew cask install "qlimagesize"
+brew cask install "qlmarkdown"
+brew cask install "qlstephen"
+brew cask install "qlvideo"
+brew cask install "quicklook-json"
+brew cask install "suspicious-package"
+brew cask install "webpquicklook"
 
 # Clean up outdated versions
 brew cleanup
