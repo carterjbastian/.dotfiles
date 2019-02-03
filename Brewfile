@@ -11,6 +11,7 @@ brew install heroku-toolbelt
 brew install ack
 brew install tree
 brew install wget
+brew install hugo
 
 # Install Python
 brew install python
