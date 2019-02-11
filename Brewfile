@@ -17,6 +17,11 @@ brew install hugo
 brew install python
 brew install python3
 
+# Install Node, mongo, and redis
+brew install node
+brew install mongodb
+brew install redis
+
 # Install Cask
 brew install caskroom/cask/brew-cask
 

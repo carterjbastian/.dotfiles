@@ -1,13 +1,14 @@
 ################################################################################
 
 # Aliases
-alias ls="ls -a"
+alias ls="ls -aG"
 alias lsd="ls -ld */"
 alias bashme="source ~/.bashrc"
 alias st='git branch -l; git status'
 
 # Navigation shortcuts
 alias cdb="cd ~/blog/"
+alias cdp="cd ~/pulse/"
 
 # Project Specific
 alias logs="pm2 logs pulse-api"
