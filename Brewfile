@@ -12,6 +12,7 @@ brew install ack
 brew install tree
 brew install wget
 brew install hugo
+brew install bash-completion
 
 # Install Python
 brew install python
@@ -38,6 +39,8 @@ brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" spotify
 brew cask install --appdir="/Applications" sourcetree
 brew cask install --appdir="/Applications" iterm2
+brew cask install --appdir="/Applications" docker
+brew cask install --appdir="/Applications" postman
 
 # Install quicklook plugins
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
@@ -49,6 +52,10 @@ brew cask install "qlvideo"
 brew cask install "quicklook-json"
 brew cask install "suspicious-package"
 brew cask install "webpquicklook"
+brew cask install "java"
+
+# Can't install elasticsearch without Java. And also Java8, so no way to do that for now automatically
+# brew install elasticsearch
 
 # Clean up outdated versions
 brew cleanup

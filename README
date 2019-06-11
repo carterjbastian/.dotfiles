@@ -1,3 +1,6 @@
 Carter's dotfiles and automated setup script
 
 To get things going on a new machine, get this repo onto your machine and run ./install.sh.
+
+For how to move your atom settings and packages over, see this:
+https://stackoverflow.com/questions/30877289/how-to-share-transfer-an-atom-installation-packages-and-settings-from-one-mac

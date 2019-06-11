@@ -8,8 +8,15 @@
 [alias]
     co = checkout
     m = merge
-    p = push
+    p = pull
     d = diff
+    fb = !git checkout -b $1 && git commit --allow-empty -m "[FB] $(git rev-parse --abbrev-ref HEAD)" && git push --no-verify --set-upstream origin
+    rb = !git checkout -b $1 && git branch --set-upstream-to `git rev-parse --abbrev-ref @{-1}` && :
+    fdoc = !mkdir -p genfiles/pull-requests/ && cp devtools/templates/fb_pull_request.md "genfiles/pull-requests/$(git rev-parse --abbrev-ref HEAD).md"
+    rdoc = !mkdir -p genfiles/pull-requests/ && cp devtools/templates/rb_pull_request.md "genfiles/pull-requests/$(git rev-parse --abbrev-ref HEAD).md"
+    
 
 [commit]
     template = ~/.git_template/commit_template
+[credential]
+	helper = cache

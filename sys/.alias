@@ -9,6 +9,24 @@ alias st='git branch -l; git status'
 # Navigation shortcuts
 alias cdb="cd ~/blog/"
 alias cdp="cd ~/pulse/"
+alias cdd="cd ~/.dotfiles/"
 
-# Project Specific
+# Grep shortcuts
+alias ggo="git grep -E '(suite|test)\.only\('"
+
+# Pretty-print json
+alias pprint="python -m json.tool"
+
+# Pulse Specific
 alias logs="pm2 logs pulse-api"
+alias prod-restart="pm2 restart pulse-api --update-env"
+
+# Curl shortcuts
+alias curlp="curl -X POST -H 'content-type: application/json'"
+
+# Mongo connections
+alias mongo-m001='mongo "mongodb://cluster0-shard-00-00-jxeqq.mongodb.net:27017,cluster0-shard-00-01-jxeqq.mongodb.net:27017,cluster0-shard-00-02-jxeqq.mongodb.net:27017/test?replicaSet=Cluster0-shard-0" --authenticationDatabase admin --ssl --username m001-student --password m001-mongodb-basics'
+
+alias mongo-sandbox='mongo "mongodb://sandbox-shard-00-00-vi79x.mongodb.net:27017,sandbox-shard-00-01-vi79x.mongodb.net:27017,sandbox-shard-00-02-vi79x.mongodb.net:27017/test?replicaSet=Sandbox-shard-0" --ssl --authenticationDatabase admin --username m001-student --password m001-mongodb-basics'
+
+alias mongo-m121='mongo "mongodb://cluster0-shard-00-00-jxeqq.mongodb.net:27017,cluster0-shard-00-01-jxeqq.mongodb.net:27017,cluster0-shard-00-02-jxeqq.mongodb.net:27017/aggregations?replicaSet=Cluster0-shard-0" --authenticationDatabase admin --ssl -u m121 -p aggregations --norc'

@@ -1,5 +1,6 @@
 .dotfiles/sys/.bashrc
 .dotfiles/sys/.bash_profile
+.dotfiles/sys/.inputrc
 .dotfiles/vim/.vimrc
 .dotfiles/vim/.vim
 .dotfiles/git/.git_template
