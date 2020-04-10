@@ -20,6 +20,7 @@ alias pprint="python -m json.tool"
 # Pulse Specific
 alias logs="pm2 logs pulse-api"
 alias prod-restart="pm2 restart pulse-api --update-env"
+alias mongod="mongod --dbpath /Users/carterbastian/data/db"
 
 # Curl shortcuts
 alias curlp="curl -X POST -H 'content-type: application/json'"

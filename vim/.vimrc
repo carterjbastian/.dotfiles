@@ -46,7 +46,7 @@ set hlsearch
 set sidescroll=5
 set ignorecase
 set smartcase
-set colorcolumn=80
+set colorcolumn=100
 syntax on
 filetype on
 set shiftwidth=4

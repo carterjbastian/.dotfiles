@@ -18,6 +18,7 @@ DOTFILE_MANIFEST="$PWD_PREFIX/manifest"
 
 # Step 0: Get and keep root access to the machine
 sudo -v
+
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
