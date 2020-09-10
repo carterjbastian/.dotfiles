@@ -10,6 +10,7 @@ alias st='git branch -l; git status'
 alias cdb="cd ~/blog/"
 alias cdp="cd ~/pulse/"
 alias cdd="cd ~/.dotfiles/"
+alias cdk="cd ~/brz/keto_digest/"
 
 # Grep shortcuts
 alias ggo="git grep -E '(suite|test)\.only\('"
@@ -31,3 +32,10 @@ alias mongo-m001='mongo "mongodb://cluster0-shard-00-00-jxeqq.mongodb.net:27017,
 alias mongo-sandbox='mongo "mongodb://sandbox-shard-00-00-vi79x.mongodb.net:27017,sandbox-shard-00-01-vi79x.mongodb.net:27017,sandbox-shard-00-02-vi79x.mongodb.net:27017/test?replicaSet=Sandbox-shard-0" --ssl --authenticationDatabase admin --username m001-student --password m001-mongodb-basics'
 
 alias mongo-m121='mongo "mongodb://cluster0-shard-00-00-jxeqq.mongodb.net:27017,cluster0-shard-00-01-jxeqq.mongodb.net:27017,cluster0-shard-00-02-jxeqq.mongodb.net:27017/aggregations?replicaSet=Cluster0-shard-0" --authenticationDatabase admin --ssl -u m121 -p aggregations --norc'
+
+alias kdprod='export MAILCHIMP_API_KEY=18a3cef5537dc9860fe7355dd4ff1697-us10; export DB_URI=mongodb+srv://heroku_vwzv1l4t:pcl4m39npui2o7t0jqmu1jmh8d@cluster-vwzv1l4t.c6uzi.mongodb.net/heroku_vwzv1l4t?retryWrites=true&w=majority'
+
+# Dockerisms
+alias dc='docker-compose'
+alias rdi='docker rmi $(docker images -f "dangling=true" -q)'
+alias rdc='docker rm $(docker ps -a -q)'
